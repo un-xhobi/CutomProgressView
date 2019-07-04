@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomProgressbar" customModule="CustomProgressBarSample" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ygx-Of-e2v"/>
+                <outlet property="innerBar" destination="SAB-Rn-WzD" id="VCM-1m-3kM"/>
+                <outlet property="innerBarWidthConstraint" destination="bqa-DG-IJG" id="t05-Fr-pDC"/>
+                <outlet property="middleBar" destination="MUW-3c-mSr" id="Qzv-Nv-80X"/>
+                <outlet property="middleBarWidthConstraint" destination="xnO-za-OEL" id="ptN-1U-VAY"/>
+                <outlet property="outerBar" destination="V0e-wI-CCe" id="Tj2-JT-Cbq"/>
+                <outlet property="outterBarWidthConstraint" destination="etD-UT-TTR" id="1ne-te-j7t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Content View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-gF-NCf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-Rn-WzD" userLabel="innerBar">
+                            <rect key="frame" x="20" y="204.5" width="374" height="409"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-3c-mSr" userLabel="middleBar">
+                            <rect key="frame" x="20" y="204.5" width="374" height="409"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-wI-CCe" userLabel="outterBar">
+                            <rect key="frame" x="20" y="204.5" width="374" height="409"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SAB-Rn-WzD" firstAttribute="centerY" secondItem="hHh-gF-NCf" secondAttribute="centerY" id="AvO-qQ-Riy"/>
+                        <constraint firstItem="V0e-wI-CCe" firstAttribute="leading" secondItem="hHh-gF-NCf" secondAttribute="leading" constant="20" id="NdP-ey-jVg"/>
+                        <constraint firstItem="MUW-3c-mSr" firstAttribute="height" secondItem="hHh-gF-NCf" secondAttribute="height" multiplier="0.5" id="PU0-Ac-ceI"/>
+                        <constraint firstItem="MUW-3c-mSr" firstAttribute="centerY" secondItem="hHh-gF-NCf" secondAttribute="centerY" id="Rgu-Xl-7k5"/>
+                        <constraint firstItem="SAB-Rn-WzD" firstAttribute="leading" secondItem="hHh-gF-NCf" secondAttribute="leading" constant="20" id="X56-Rp-bVv"/>
+                        <constraint firstItem="SAB-Rn-WzD" firstAttribute="height" secondItem="hHh-gF-NCf" secondAttribute="height" multiplier="0.5" id="YF7-Md-kUE"/>
+                        <constraint firstItem="V0e-wI-CCe" firstAttribute="centerY" secondItem="hHh-gF-NCf" secondAttribute="centerY" id="ZC9-6H-1Oy"/>
+                        <constraint firstItem="SAB-Rn-WzD" firstAttribute="width" secondItem="hHh-gF-NCf" secondAttribute="width" constant="-40" id="bqa-DG-IJG"/>
+                        <constraint firstItem="V0e-wI-CCe" firstAttribute="width" secondItem="hHh-gF-NCf" secondAttribute="width" constant="-40" id="etD-UT-TTR"/>
+                        <constraint firstItem="MUW-3c-mSr" firstAttribute="leading" secondItem="hHh-gF-NCf" secondAttribute="leading" constant="20" id="iCD-U6-UgG"/>
+                        <constraint firstItem="MUW-3c-mSr" firstAttribute="width" secondItem="hHh-gF-NCf" secondAttribute="width" constant="-40" id="xnO-za-OEL"/>
+                        <constraint firstItem="V0e-wI-CCe" firstAttribute="height" secondItem="hHh-gF-NCf" secondAttribute="height" multiplier="0.5" id="yio-KC-k4i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hHh-gF-NCf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="H1B-fD-w4L"/>
+                <constraint firstItem="hHh-gF-NCf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="H23-ZY-pou"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hHh-gF-NCf" secondAttribute="bottom" id="MbC-c8-bvz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hHh-gF-NCf" secondAttribute="trailing" id="vaY-8M-Gab"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
