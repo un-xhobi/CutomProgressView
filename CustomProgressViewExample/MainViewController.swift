@@ -13,7 +13,7 @@ import CustomProgressViewFramework
 class MainViewController: UIViewController {
     
     
-    @IBOutlet weak var progressBar: CustomProgressbar!
+    @IBOutlet weak var progressBar: CustomProgressBar!
     @IBOutlet weak var animationTimTF: UITextField!
     
     

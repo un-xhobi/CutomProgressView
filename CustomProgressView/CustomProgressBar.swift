@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class CustomProgressbar: UIView {
+public class CustomProgressBar: UIView {
     
     let kCONTENT_XIB_NAME = "ProgressBarView"
     
@@ -46,7 +46,7 @@ public class CustomProgressbar: UIView {
     }
     
     func commonInit() {
-        Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
+        Bundle(for: CustomProgressBar.self).loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
         barWidth = innerBar.frame.width
     }
@@ -81,7 +81,7 @@ public class CustomProgressbar: UIView {
 }
 
 
-extension CustomProgressbar {
+extension CustomProgressBar {
     public func resetViews(){
         timer.invalidate()
         if let barWidth = barWidth {
